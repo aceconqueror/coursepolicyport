@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('p1.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding-left: 3%;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .logo-container img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .logo-container h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: black;
+            line-height: 1.5;
+            margin-bottom: 0;
+            white-space: nowrap;
+        }
+
+        .main-container {
+            width: 350px;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-top: 150px;
+            margin-left: 0%;
+        }
+
+        .main-container h1 {
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: black;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            width: 100%;
+            white-space: nowrap;
+        }
+
+        .main-container p {
+            font-size: 1.1rem;
+            color: black;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .main-container button {
+            padding: 1rem;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        .main-container button:hover {
+            background-color: #0056b3;
+        }
+
+        .main-container button:active {
+            background-color: #003d7a;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="p2.png" alt="Logo">
+        <h1>Smart Comply</h1>
+    </div>
+
+    <div class="main-container">
+        <h1>Stay Compliant, Stay Successful</h1>
+        <p>
+            Clear any violations with ease. Submit your explanations or proof for violations and take necessary actions to stay in good academic standing.
+        </p>
+        <button onclick="window.location.href='login.php'">Get Started</button>
+    </div>
+</body>
+</html>

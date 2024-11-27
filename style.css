@@ -1,0 +1,162 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Top Navigation Bar */
+.top-bar {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.top-bar .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.top-bar .nav-links a {
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.top-bar .nav-links a:hover {
+    background-color: #34495e;
+}
+
+.top-bar .user-info {
+    position: relative;
+}
+
+.top-bar .profile-dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.top-bar .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+.top-bar .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.top-bar .dropdown-content a {
+    padding: 12px;
+    color: black;
+    display: block;
+}
+
+.top-bar .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.top-bar .profile-dropdown.show .dropdown-content {
+    display: block;
+}
+
+/* Main Content Styles */
+.main-content {
+    margin-top: 80px; /* To prevent overlap with the fixed header */
+    padding: 20px;
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+}
+
+/* Violations Table Styles */
+table,
+.policies-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+table th,
+.policies-table th,
+table td,
+.policies-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th,
+.policies-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+table tr:hover,
+.policies-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+table a,
+.policies-table a {
+    color: #007bff;
+}
+
+table a:hover,
+.policies-table a:hover {
+    text-decoration: underline;
+}
+
+.submit-response {
+    margin-top: 20px;
+}
+
+.submit-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.submit-btn:hover {
+    background-color: #218838;
+}
+
+/* Make the layout responsive */
+@media (max-width: 768px) {
+    .top-bar .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-bar .nav-links a {
+        padding: 12px;
+    }
+}
